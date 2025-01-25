@@ -1,0 +1,505 @@
+@media screen and (min-width: 767px){
+   
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+  * {
+   font-family: 'Montserrat', -apple-system, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+  body{
+      background-image: url(Fondos/Estadio.jpeg);
+      background-size: 100%;
+      background-position: 0px -100px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding-top: 120px;
+  }
+  header{
+     height: 100px;
+     width: 100%;
+     display: grid;
+     grid-template-columns: 300px auto;
+     text-align: center;
+     align-items: center;
+     background-image: linear-gradient(300deg, red,#7e0202);
+     color: black;
+     gap: 20px;
+     position: fixed;
+     top: 0;
+     border-bottom-left-radius: 15px;
+     border-bottom-right-radius: 15px;
+  }
+  footer{
+     background-color: #272020;
+     color: white;
+     padding: 20px;
+     margin: 50px 0px 0px 0px;
+     border-top:5px solid #7e0202 ;
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: auto auto;
+     padding-left: 5%;
+  }
+  main{
+     width: 90%;
+     margin: auto;
+  }
+
+
+
+
+
+
+.footer-grl{
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 100px;
+}
+.redes ul{
+   list-style: none;
+   display: grid;
+   grid-template-columns: 50px 50px 50px;
+   gap: 15px;
+   margin-left: 60%;
+   margin-bottom: -90px;
+}
+.redes svg{
+   width: 25px;
+}
+.footer-pag{
+   width: 200px;
+   text-align: center;
+   align-items: center;
+   display: grid;
+   grid-template-columns: 100px 170px;
+  }
+.footer-pag img{
+   margin: 10px 2px auto 45px;
+   border-radius: 50%;
+   width: 60%;
+}
+.footer-pag h2{
+   padding-top: 10px;
+   color: white;
+   font-size: auto;
+   margin-bottom: auto;
+}
+footer p{
+   text-align:start;
+   display: flex;
+   justify-content: flex-start;
+   margin: 5px 0px 10px 35px;
+   font-family: 'Montserrat', -apple-system, sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+   border-top: 2px solid white;
+   width: 1600px;
+}
+footer p a{
+   color: red;
+   margin-left: 5px;
+}
+
+  
+  
+  
+
+
+
+
+nav{
+   margin-right: 85%;
+}
+nav ul{
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   list-style: none;
+   margin-left: 15%;
+   font-size: 20px;
+}
+.nombre-pagina{
+ width: 200px;
+ text-align: center;
+ align-items: center;
+ display: grid;
+ grid-template-columns: 100px 170px;
+ gap: 20px;
+}
+.nombre-pagina img{
+ margin: 5px 5px 10px 50px;
+ width: 90px;
+ border-radius: 50%;
+}
+.nombre-pagina h1{
+   padding-top: 10px;
+}
+nav li{
+  border-radius: 5px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  padding-top: 13px;
+  cursor: pointer;
+}
+nav li a{
+  transition: all 0.5s ease;
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
+nav li a:hover{
+  transition: 0.5s ease;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 10px 5px;
+}
+
+
+
+
+
+
+  h1{
+    margin-left: 25px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+     color: white;
+  }
+  p{
+     padding: 15px;
+  }
+  h2{
+     color: black;
+     padding: 20px;
+     margin:20px 0px;
+  }
+  span{
+     font-weight: bold;
+     color: white;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  
+  
+  
+  
+  
+  section{
+     margin-top: 70px;
+     background-color: #d8d0d0;
+     width: 1000px;
+     margin-left: 20%;
+     height: auto;
+     border-radius: 30px;
+  }
+  article{
+     background-color: #7e0202;
+     color: white;
+     padding: 15px;
+     display: grid;
+     grid-template-rows: 100px auto auto;
+     align-items: center;
+     height: auto;
+     border-radius: 10px;
+  }
+  article img{
+     width: 100%;
+     height: 100%;
+     border-radius: 5px;
+  }
+ 
+  #noticia-principal{
+     display: grid;
+     grid-template-rows: 80px auto 130px;
+     margin-left: 25px;
+     margin-right: 25px;
+  }
+  section div{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     padding: 15px;
+     margin: 10px;
+     gap: 20px;
+     border-radius: 10px;
+  }
+ }
+
+
+
+
+
+
+
+
+  /*Para Telefono*/
+  @media screen and (max-width: 767px){
+   html {
+      height: 100%;
+      width: 100%;
+    }
+    * {
+      font-family: 'Montserrat', -apple-system, sans-serif;
+       text-align: center;
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+    }
+    body{
+      width: 100%;
+      background-image: linear-gradient(230deg, #7e0202, rgb(39, 38, 38), black);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding-top: 80px;
+    }
+    footer{
+      width: 100%;
+       background-color: #272020;
+       color: white;
+       padding: 10px 20px 15px 20px;
+       margin: 50px 0px 0px 0px;
+       border-top: 4px solid #7e0202 ;
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-rows: auto auto;
+    }
+    main{
+       width: 100%;
+    }
+  .footer-grl{
+     display: grid;
+     grid-template-columns: auto auto;
+     height: fit-content;
+  }
+  .redes ul{
+     list-style: none;
+     display: grid;
+     grid-template-columns: max-content max-content max-content;
+     gap: 30px;
+     height: fit-content;
+  }
+  .redes{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .redes svg{
+     width: 25px;
+     height: fit-content;
+  }
+  .footer-pag{
+     width: fit-content;
+     display: grid;
+     grid-template-columns: auto auto;
+     gap: 5px;
+    }
+  .footer-pag img{
+     display: flex;
+     justify-content: center;
+     border-radius: 50%;
+     width: 80px;
+  }
+  .footer-pag h2{
+     margin-top: auto;
+     color: white;
+     font-size: 20px;
+     margin-bottom: auto;
+  }
+  footer p{
+   word-spacing: 1px;
+     text-align:start;
+     display: inline;
+     justify-content: flex-start;
+     padding: 10px 5px 10px 5px;
+     margin: 5px 0px 10px;
+     font-family: 'Montserrat', -apple-system, sans-serif;
+     font-size: 12px;
+     font-weight: bold;
+     border-top: 2px solid white;
+     width: fit-content;
+  }
+  footer p a{
+     color: red;
+     display: inline;
+  }
+  footer p a:hover{
+   cursor: pointer;
+   color: #7e0202;
+   transition: 0.3s ease;
+  }
+  
+    
+    
+    
+  
+  
+  
+  header{
+   height: 80px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: auto auto;
+   background-image: linear-gradient(300deg, red,#7e0202);
+   position: fixed;
+   text-align: center;
+   list-style: none;
+   top: 0;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   gap: 30px;
+   padding-right: 35px;
+   padding-left: 5px;
+}
+nav{
+   height: 100%;
+   overflow-x: auto;
+     white-space: nowrap;
+}
+  nav ul{
+   height: 100%;
+     display: grid;
+     gap: 25px;
+     grid-template-columns: auto auto auto auto auto;
+     list-style: none;
+     padding-top: auto;
+     margin-left: 2%;
+     font-size: 15px;
+  }
+  nav::-webkit-scrollbar {
+   height: 5px; /* Ancho de la barra */
+}
+nav::-webkit-scrollbar-thumb {
+   background: rgba(58, 58, 58, 0.7); /* Color con transparencia */
+}
+/* Efecto al pasar el cursor */
+nav::-webkit-scrollbar-thumb:hover {
+   background: rgba(100, 100, 100, 0.9);
+}
+/* Estilizar el "track" (fondo de la barra) */
+nav::-webkit-scrollbar-track {
+   background: transparent; /* Fondo transparente para que no afecte el border-radius */
+   border-radius: 10px;
+}
+nav li{
+    border-radius: 5px;
+    width: max-content;
+    height: fit-content;
+    margin-top: 30px;
+  }
+  nav li a{
+    transition: all 0.5s ease;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-weight: bold;
+  }
+  nav li a:hover{
+    transition: 0.5s ease;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 5px;
+  }
+  .nombre-pagina{
+   height: fit-content;
+   width: fit-content;
+   text-align: center;
+   align-items: center;
+   display: grid;
+   grid-template-columns: auto max-content;
+   gap: 5px;
+  }
+  .nombre-pagina img{
+   padding-top: auto;
+   width: 75px;
+   border-radius: 50%;
+  }
+  .nombre-pagina h1{
+   font-size: 19px;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+   align-items: center;  
+     padding-top: auto;
+  }
+  
+  
+  
+  
+  
+  
+    p{
+       padding: 15px;
+    }
+    span{
+       font-weight: bold;
+       color: white;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    
+    
+    
+    
+    section{
+      width: fit-content;
+       margin-top: 70px;
+       background-color: #d8d0d0;
+       height: auto;
+       margin: 70px 40px auto 40px;
+       border-radius: 30px;
+    }
+    section h2{
+      color: black;
+      padding: 20px;
+    }
+    article{
+       background-color: #7e0202;
+       color: white;
+       padding: 15px;
+       display: grid;
+       grid-template-rows: 80px auto auto;
+       align-items: center;
+       height: auto;
+       border-radius: 10px;
+    }
+    article img{
+       width: 100%;
+       height: 100%;
+       border-radius: 5px;
+    }
+   article p{
+      padding: 20px;
+   }
+    #noticia-principal{
+       display: grid;
+       grid-template-rows: 80px auto auto;
+       margin-left: 25px;
+       margin-right: 25px;
+    }
+    section div{
+       display: grid;
+       grid-template-rows: auto auto;
+       padding: 15px;
+       margin: 10px;
+       gap: 20px;
+       border-radius: 10px;
+    }
+  }

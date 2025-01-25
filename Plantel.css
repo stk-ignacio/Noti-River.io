@@ -1,0 +1,468 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  * {
+   font-family: 'Montserrat', -apple-system, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+  body{
+      background-color: white;
+      background-size: 100%;
+      background-position: 0px -100px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding-top: 120px;
+  }
+  header{
+     height: 100px;
+     width: 100%;
+     display: grid;
+     grid-template-columns: 300px auto;
+     text-align: center;
+     align-items: center;
+     background-image: linear-gradient(300deg, red,#7e0202);
+     color: black;
+     gap: 20px;
+     position: fixed;
+     top: 0;
+     border-bottom-left-radius: 15px;
+     border-bottom-right-radius: 15px;
+  }
+  footer{
+     background-color: #272020;
+     color: white;
+     padding: 20px;
+     margin: 50px 0px 0px 0px;
+     border-top:5px solid #7e0202 ;
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: auto auto;
+     padding-left: 5%;
+  }
+  main{
+     width: 90%;
+     margin: auto;
+  }
+
+
+
+
+
+
+.footer-grl{
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 100px;
+}
+.redes ul{
+   list-style: none;
+   display: grid;
+   grid-template-columns: 50px 50px 50px;
+   gap: 15px;
+   margin-left: 60%;
+   margin-bottom: -90px;
+}
+.redes svg{
+   width: 25px;
+}
+.footer-pag{
+   width: 200px;
+   text-align: center;
+   align-items: center;
+   display: grid;
+   grid-template-columns: 100px 170px;
+  }
+.footer-pag img{
+   margin: 10px 2px auto 45px;
+   border-radius: 50%;
+   width: 70%;
+}
+.footer-pag h2{
+   padding-top: 35px;
+   color: white;
+   font-size: auto;
+   margin-bottom: auto;
+}
+footer p{
+   text-align:start;
+   display: flex;
+   justify-content: flex-start;
+   margin: 5px 0px 10px 35px;
+   font-family: 'Montserrat', -apple-system, sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+   border-top: 2px solid white;
+   width: 1600px;
+}
+footer p a{
+   color: red;
+   margin-left: 5px;
+}
+
+  
+  
+  
+
+
+
+
+nav{
+   margin-right: 85%;
+}
+nav ul{
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   list-style: none;
+   margin-left: 15%;
+   font-size: 20px;
+}
+.nombre-pagina{
+ width: 200px;
+ text-align: center;
+ align-items: center;
+ display: grid;
+ grid-template-columns: 100px 170px;
+ gap: 20px;
+}
+.nombre-pagina img{
+ margin: 5px 5px 10px 50px;
+ width: 90px;
+ border-radius: 50%;
+}
+.nombre-pagina h1{
+   padding-top: 10px;
+}
+nav li{
+  border-radius: 5px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  padding-top: 13px;
+  cursor: pointer;
+}
+nav li a{
+  transition: all 0.5s ease;
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
+nav li a:hover{
+  transition: 0.5s ease;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 10px 5px;
+}
+
+
+
+
+
+
+  .nombre-pagina h1{
+    margin-left: 25px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+     color: white;
+  }
+  p{
+     padding: 15px;
+  }
+  span{
+     font-weight: bold;
+     color: white;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+
+
+.card-content{
+    width: 1500px;
+    margin-left: 6%;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.pl{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 10px; 
+    color: white;
+}
+.plantel{
+    height: 40px;
+    background-color: rgb(173, 11, 11);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.posicion{
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 30px;
+    background-color: #b1adad;
+    height: 30px;
+}
+.jugador{
+    display: grid;
+    grid-template-columns: 300px 700px 500px;
+    background-color: white;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    border-right: 1px solid rgb(216, 216, 216);
+    border-left: 1px solid rgb(216, 216, 216);
+    height: 30px;
+    align-items: center;
+}
+.jugador:hover{
+   background-color: #a0a0a0;
+   color: black;
+   transition: 0.2s ;
+   cursor: pointer;
+}
+#ultimo{
+    border-bottom: none;
+}
+.jugador #simbolo{
+   padding-left: 20px;
+   text-align: left;
+   align-items: center;
+   margin-top: 3px;
+}
+#lesionado{
+   color: red;
+}
+.jugador img{
+    padding-left: 55%;
+    height: 15px;
+}
+.numero{
+    padding-right: 75%;
+}
+.numero h3{
+    text-align: left;
+    padding-left: 30px;
+    font-weight: normal;
+}
+.nombre{
+   display: grid;
+   grid-template-columns: max-content 20px;
+}
+.nombre h3{
+    text-align: left;
+    padding-left: 200px;
+    font-weight: normal;
+}
+#entrenador{
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+}
+#prestamo{
+   width: 45px;
+   height: 20px;
+}
+
+
+
+.tarjeta-oculto{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: white;
+   padding: 15px;
+   width: 650px;
+   max-height: 63vh;
+   overflow-y: auto; /* Habilita el scroll vertical */
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+   display: none;
+   z-index: 2; /* La tarjeta debe estar encima del overlay */
+}
+.todo{
+   height: auto;
+   width: 100%;
+   grid-template-columns: max-content auto auto;
+   display: grid;
+   gap: 15px;
+}
+.primera-columna{
+   display: grid;
+   grid-template-rows: max-content auto;
+   height: fit-content;
+   width: 100%;
+}
+.trayectoria{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 35px;
+   width: fit-content;
+}
+.clubes{
+   display: flex;
+   align-items: center;
+   width: fit-content;
+   gap: 4px;
+}
+.clubes img{
+   width: 30px;
+}
+.clubes p{
+   margin-left: 40px;
+   font-size: 10px;
+   width: fit-content;
+   padding: 0;
+   font-weight: bold;
+   position: absolute;
+}
+.tarjeta-oculto.mostrar .foto-jugador{
+   border-radius: 20px;
+   width: 160px;
+}
+.segunda-columna{
+   display: grid;
+   grid-template-rows: auto auto auto;
+   height: fit-content;
+   width: 100%;
+   gap: 10px;
+}
+.datos{
+   display: grid;
+   grid-template-rows: auto auto;
+   gap: 2px;
+   width: fit-content;
+
+}
+.datos h2 img{
+   margin-left: 10px;
+   margin-top: 4px;
+   width: 15px;
+}
+.datos h2{
+   font-size: 20px;
+   width: fit-content;
+}
+.datos h3{
+   font-size: 15px;
+   text-align: left;
+   color: red;
+   width: fit-content;
+}
+.info{
+   height: fit-content;
+   width: fit-content;
+}
+.info p{
+   text-align: left;
+   width: fit-content;
+   padding: 5px 0 5px 0;
+   font-size: 12px;
+}
+.info p #col{
+   width: 15px;
+}
+.tercera-columna{
+   display: grid;
+   grid-template-rows: auto auto;
+   height: fit-content;
+   width: 100%;
+   height: 100%;
+   justify-content: end;
+}
+.tercera-columna img{
+   padding-top: 5px;
+   height: 192px;
+}
+.tercera-columna .boton{
+   display: flex;
+   justify-content: end;
+   align-items:end;
+   height: 100%;
+}
+.tercera-columna button{
+   width: fit-content;
+   height: fit-content;
+   padding: 6px;
+   border-radius: 7px;
+   background-color: red;
+   color: white;
+   font-weight: bold;
+   border: none;
+}
+.tercera-columna button:hover{
+   cursor: pointer;
+   transition: 0.3s ease;
+   background-color: #7e0202;
+} 
+#trainer{
+   margin-top: 0px;
+}
+#trainer h3{
+   font-size: 13px;
+   font-weight: bold;
+   text-align: left;
+   margin-bottom: 9px;
+}
+#mg{
+   margin-top: 61px;
+}
+#mg h3{
+   font-size: 13px;
+   font-weight: bold;
+   text-align: left;
+   gap: 0px;
+   margin-bottom: 9px;
+}
+#retiro{
+   width: 12px;
+}
+
+.mostrar {
+   display: block;
+}
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   display: none;
+   z-index: 1; /* Debe estar debajo de la tarjeta */
+}
+.overlay.mostrar {
+   display: block;
+}
+
+
+/* Estilizar la barra de desplazamiento para navegadores basados en WebKit (Chrome, Edge, Safari) */
+.tarjeta-oculto::-webkit-scrollbar {
+   width: 8px; /* Ancho de la barra */
+   border-radius: 10px; /* Redondear la barra */
+}
+.tarjeta-oculto::-webkit-scrollbar-thumb {
+   background: rgba(150, 150, 150, 0.7); /* Color con transparencia */
+   border-radius: 10px; /* Redondear el thumb */
+}
+/* Efecto al pasar el cursor */
+.tarjeta-oculto::-webkit-scrollbar-thumb:hover {
+   background: rgba(100, 100, 100, 0.9);
+}
+/* Estilizar el "track" (fondo de la barra) */
+.tarjeta-oculto::-webkit-scrollbar-track {
+   background: transparent; /* Fondo transparente para que no afecte el border-radius */
+   border-radius: 10px;
+}
