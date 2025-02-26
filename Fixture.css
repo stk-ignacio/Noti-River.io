@@ -565,7 +565,7 @@ h3{
 .gral{
    margin-top: 50px;
    font-family: fjalla one !important;
-   padding: 0 10px 0 10px;
+   padding: 0 5px 0 5px;
 }
 .match{
    border: 1px solid black;
@@ -580,6 +580,7 @@ h3{
    display: grid;
    grid-template-columns: max-content auto max-content;
    gap: auto;
+   width: 100%;
 }
 .team-home{
    height: 60px;
@@ -621,10 +622,10 @@ h3{
 }
 .team-away img{
    width: 35px;
-   margin: 0 15px 0 2px;
+   margin: 0 5px 0 2px;
 }
 .team-home img{
    width: 35px;
-   margin: 0 2px 0 15px;
+   margin: 0 2px 0 5px;
 }
 }
