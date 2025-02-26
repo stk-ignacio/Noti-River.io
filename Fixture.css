@@ -565,13 +565,14 @@ h3{
 .gral{
    margin-top: 50px;
    font-family: fjalla one !important;
+   padding: 0 10px 0 10px;
 }
 .match{
    border: 1px solid black;
    border-radius: 25px;
-   width: 90%;
+   width: 100%;
    height: 60px;
-   margin: 4px auto 20px auto;
+   margin: 4px 0 20px 0;
    font-weight: bold;
    box-shadow: 2px 2px 2px;
 }
