@@ -20,19 +20,19 @@ async function loadNews() {
     const { data, error } = await supabase
         .from('noticias')
         .select('*')
-        .order('created_at', { ascending: false });
+        .order('created_at', { ascending: false }); // ✅ orden de más nuevas a más viejas
 
     if (error) {
         console.error('Error al cargar noticias:', error.message);
         return;
     }
 
-    //nt.innerHTML = ''; // Limpiar por si se recarga
+    nt.innerHTML = ''; // Limpiar por si se recarga
 
     data.forEach(item => {
         const article = document.createElement('article');
         article.innerHTML = `<h3>${item.title}</h3><img src="${item.image}" alt="not" style="width:100%"><p>${item.content}</p>`;
-        nt.appendChild(article);
+         nt.appendChild(article);
     });
 }
 
@@ -47,46 +47,40 @@ function closeModal() {
 }
 
 async function addNews() {
-    const nt = document.getElementById('nt');
-    const title = document.getElementById('title').value;
-    const imageInput = document.getElementById('image');
-    const content = document.getElementById('content').value;
+  const title = document.getElementById('title').value;
+  const image = document.getElementById('image').value;
+  const content = document.getElementById('content').value;
+  const nt = document.getElementById('nt');
 
-    if (title && content && imageInput.files.length > 0) {
-        const file = imageInput.files[0];
-        const fileName = `noticia-${Date.now()}-${file.name}`;
+  if (!title || !content) {
+    alert('Completa todos los campos');
+    return;
+  }
 
-        const { data: uploadData, error: uploadError } = await supabase.storage
-            .from('imagenes')
-            .upload(fileName, file);
+  const { data, error } = await supabase
+    .from('noticias')
+    .insert([{ title, image, content }])
+    .select();
 
-        if (uploadError) {
-            alert("Error al subir imagen: " + uploadError.message);
-            return;
-        }
+  if (error) {
+    alert('Error al subir la noticia: ' + error.message);
+    return;
+  }
 
-        const { data: urlData } = supabase.storage
-            .from('imagenes')
-            .getPublicUrl(fileName);
+  const noticia = data[0];
+  const article = document.createElement('article');
+  article.innerHTML = `
+    <h3>${noticia.title}</h3>
+    <img src="${noticia.image}" alt="not" style="width:100%">
+    <p>${noticia.content}</p>
+  `;
+  nt.insertBefore(article, nt.firstChild);
 
-        const imageUrl = urlData.publicUrl;
-
-        // Insertar noticia en la tabla
-        const { error: insertError } = await supabase
-            .from('noticias')
-            .insert([{ title, image: imageUrl, content }]);
-
-        if (insertError) {
-            alert("Error al guardar noticia: " + insertError.message);
-            return;
-        }
-
-        closeModal();
-        loadNews(); // Volver a cargar todo
-    } else {
-        alert('Completa todos los campos y seleccioná una imagen');
-    }
+  alert('Noticia publicada');
+  closeModal();
+  loadNews(); // recarga todas las noticias (con la nueva incluida)
 }
+
 
 // Función para eliminar una noticia en caso de EMERGENCIA
 function deleteNews(index) {
