@@ -1,3 +1,4 @@
+@media screen and (min-width: 767px){
 html {
     height: 100%;
     width: 100%;
@@ -205,12 +206,13 @@ details{
    color: black;
 }
 .calendario{
+   cursor: pointer;
    display: flex;
-   margin-top: 140px;
+   margin-top: 235px;
    text-align: center;
    align-items: center;
-   width: 380px;
-   padding-left: 25%;
+   width: fit-content;
+   margin-left: 62%;
    position: fixed;
 }
 summary{
@@ -406,3 +408,446 @@ h3{
    width: 40px;
    margin: 10px 20px 5px 20px;
 }
+}
+
+
+@media screen and (max-width: 767px){
+    body{
+        background-color: whitesmoke;
+        background-size: 100%;
+        background-position: 0px -100px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+    }
+    html {
+      height: 100%;
+      width: 100%;
+    }
+    * {
+      font-family: 'Montserrat', -apple-system, sans-serif;
+       text-align: center;
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+    }
+    footer{
+      width: 100%;
+       background-color: #272020;
+       color: white;
+       padding: 10px 20px 15px 20px;
+       margin: 50px 0px 0px 0px;
+       border-top: 4px solid #7e0202 ;
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-rows: auto auto;
+    }
+    main{
+       width: 100%;
+    }
+  
+  
+  
+  
+  
+    .footer-grl{
+      display: grid;
+      grid-template-columns: auto auto;
+      height: fit-content;
+   }
+   .redes ul{
+      list-style: none;
+      display: grid;
+      grid-template-columns: max-content max-content max-content;
+      gap: 30px;
+      height: fit-content;
+   }
+   .redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .redes svg{
+      width: 25px;
+      height: fit-content;
+   }
+   .footer-pag{
+      width: fit-content;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 5px;
+     }
+   .footer-pag img{
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      width: 80px;
+   }
+   .footer-pag h2{
+      margin-top: auto;
+      color: white;
+      font-size: 20px;
+      margin-bottom: auto;
+   }
+   footer p{
+    word-spacing: 1px;
+      text-align:start;
+      display: inline;
+      justify-content: flex-start;
+      padding: 10px 5px 10px 5px;
+      margin: 5px 0px 10px;
+      font-family: 'Montserrat', -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      border-top: 2px solid white;
+      width: fit-content;
+   }
+   footer p a{
+      color: red;
+      display: inline;
+   }
+   footer p a:hover{
+    cursor: pointer;
+    color: #7e0202;
+    transition: 0.3s ease;
+   }
+   p{
+    padding: 15px;
+ }
+ a{
+     text-decoration: none;
+     color: black;
+ }
+    
+    
+    
+  
+  
+  
+header{
+   height: 80px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: auto auto;
+   background-image: linear-gradient(300deg, red,#7e0202);
+   position: fixed;
+   text-align: center;
+   list-style: none;
+   top: 0;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   gap: 30px;
+   padding-right: 35px;
+   padding-left: 5px;
+}
+nav{
+   height: 100%;
+   overflow-x: auto;
+     white-space: nowrap;
+}
+  nav ul{
+   height: 100%;
+     display: grid;
+     gap: 25px;
+     grid-template-columns: auto auto auto auto auto;
+     list-style: none;
+     padding-top: auto;
+     margin-left: 2%;
+     font-size: 15px;
+  }
+  nav::-webkit-scrollbar {
+   height: 7px; /* Ancho de la barra */
+}
+nav::-webkit-scrollbar-thumb {
+   background: rgba(58, 58, 58, 0.7); /* Color con transparencia */
+}
+/* Efecto al pasar el cursor */
+nav::-webkit-scrollbar-thumb:hover {
+   background: rgba(100, 100, 100, 0.9);
+}
+/* Estilizar el "track" (fondo de la barra) */
+nav::-webkit-scrollbar-track {
+   background: transparent; /* Fondo transparente para que no afecte el border-radius */
+   border-radius: 10px;
+}
+nav li{
+    border-radius: 5px;
+    width: max-content;
+    height: fit-content;
+    margin-top: 30px;
+  }
+  nav li a{
+    transition: all 0.5s ease;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-weight: bold;
+  }
+  nav li a:hover{
+    transition: 0.5s ease;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 5px;
+  }
+  .nombre-pagina{
+   height: fit-content;
+   width: fit-content;
+   text-align: center;
+   align-items: center;
+   display: grid;
+   grid-template-columns: auto max-content;
+   gap: 5px;
+  }
+  .nombre-pagina img{
+   padding-top: auto;
+   width: 75px;
+   border-radius: 50%;
+  }
+  .nombre-pagina h1{
+   font-size: 19px;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+   align-items: center;  
+     padding-top: auto;
+  }
+  
+  
+  
+  .name-pag{
+   width: 100%;
+   background-image:linear-gradient( 180deg, #141111, #4b4343);
+   height: 180px;
+   display: flex;
+   justify-content: left;
+}
+
+.name-pag h2{
+   width: fit-content;
+   height: fit-content;
+   margin: 130px 0 0 40px;
+   font-size: 30px;
+   font-weight: bold;
+   color: white;
+}
+  details{
+     color: white;
+     margin-left: 500px;
+     position: fixed;
+     margin-left:650px ;
+  }
+  .cal-mes{
+     color: black;
+  }
+  .calendario{
+     cursor: pointer;
+     display: flex;
+     margin-top: 235px;
+     text-align: center;
+     align-items: center;
+     width: fit-content;
+     margin-left: 62%;
+     position: fixed;
+  }
+  summary{
+     margin-top: 20px;
+     list-style: none;
+  }
+  summary img{
+     width: 25px;
+  }
+  .calendario ul{ 
+     position: fixed;
+     border: 2px solid black;
+     border-radius: 15px;
+     padding: 10px;
+     list-style: none;
+     display: grid;
+     grid-template-columns:  90px 90px 90px 90px;
+     grid-template-rows: 35px 35px 35px;
+     background-color: white;
+     margin-top: 45px;
+     margin-left: -200px;
+     z-index: 2;
+  }
+  .cal li{
+     border: 1px solid black;
+     align-items: center;
+     text-align: center;
+     padding-top: 7px;
+     height: 35px;
+  }
+  .cal li:hover{
+     background-color: #4b4343;
+     color: #e2e2e2;
+     transition: 0.3s ease;
+  }
+  
+  
+  
+  .down-month{
+     padding-top: 60px;
+  }
+  h3{
+     margin-top: 40px;
+  }
+  .menu{
+   border-bottom: 1px solid black;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   width: auto;
+   margin-left: 15px;
+   border: 1px solid black;
+}
+  .mes{
+     text-align: center;
+     width: auto;
+     background-color: #353131;
+     border-radius: 15px;
+     color: white;
+  }
+  .meses{
+     width: 130px;
+     height: 2px;
+     margin-left: 15px;
+     align-items: left;
+     margin-bottom: 1px;
+     padding-left: 10px;
+  }
+  .prox-partidos{
+   text-align: left;
+   margin-left: 15px;
+   width: max-content;
+   height: 30px;
+}
+  #dmvc a{
+     color: white;
+  }
+  #dmvc{
+     text-align: right;
+     width: max-content;
+     text-align: center;
+     height: max-content;
+     background-color: #7e0202;
+     margin-bottom: 5px;
+     border-radius: 10px;
+     padding: 5px 8px 5px 8px;
+  }
+  #dmvc:hover{
+     transition: 0.5s ease;
+     color: white;
+     background-color: #272020;
+  }
+  .historial a{
+   color: white;
+}
+.historial-box{
+   display: flex;
+   justify-content: right;
+   margin-right: 15px;
+}
+.historial{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px 8px 5px 8px;
+   width: max-content;
+   height: max-content;
+   background-color: #7e0202;
+   margin-bottom: 5px;
+   border-radius: 10px;
+}
+.historial:hover{
+   transition: 0.5s ease;
+   color: white;
+   background-color: #272020;
+}
+  .card-content{
+     width: 100%;
+     padding-left: 100px;
+     padding-right: 100px;
+     padding-left: 28%;
+  }
+  .gral h5{
+     text-align: left;
+     margin-left: 35px;
+     font-weight: bold;
+     color: #949494;
+     font-size: 12px;
+  }
+  .gral{
+     margin-top: 50px;
+     font-family: fjalla one !important;
+  }
+  .match{
+     border: 1px solid black;
+     border-radius: 25px;
+     width: 800px;
+     height: 60px;
+     margin-left: 15px;
+     font-weight: bold;
+     box-shadow: 2px 2px 2px;
+     margin-top: 4px;
+     margin-bottom: 20px;
+  }
+  .teams{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 25px;
+  }
+  .team-home{
+     height: 60px;
+     width: auto;
+     display: grid;
+     grid-template-columns: auto auto;
+  }
+  .team-away{
+     height: 60px;
+     width: auto;
+     display: grid;
+     grid-template-columns: auto auto;
+  }
+  .team-away .name-team{
+     text-align: right;
+  }
+  .team-home .name-team{
+     text-align: left;
+  }
+  .name-team{
+     margin-top: 10%;
+     width: 207px;
+     font-size: 15px;
+  }
+  .date{
+     border-right: 1px solid #e2e2e2;
+     background-color:  #e2e2e2;
+     height: 58px;
+     width: 150px;
+     margin-left: 25px;
+     display: grid;
+     grid-template-columns: 50px 50px 50px;
+     text-align: center;
+     align-items: center;
+  }
+  .date h4{
+     font-weight: bold;
+     font-size: 15px;
+     width: 50px;
+  }
+  .final{
+     color: #949494;
+  }
+  .resultado{
+     color: black;
+  }
+  .team-away img{
+     width: 40px;
+     margin: 10px 20px 5px 20px;
+  }
+  .team-home img{
+     width: 40px;
+     margin: 10px 20px 5px 20px;
+  }
+}
+

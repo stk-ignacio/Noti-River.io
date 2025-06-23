@@ -435,7 +435,7 @@ nav{
      font-size: 15px;
   }
   nav::-webkit-scrollbar {
-   height: 5px; /* Ancho de la barra */
+   height: 7px; /* Ancho de la barra */
 }
 nav::-webkit-scrollbar-thumb {
    background: rgba(58, 58, 58, 0.7); /* Color con transparencia */
@@ -557,7 +557,7 @@ h3{
 .gral h5{
    width: 100%;
    text-align: left;
-   margin-left: 45px;
+   margin-left: 25px;
    font-weight: bold;
    color: #949494;
    font-size: 10px;
@@ -607,6 +607,336 @@ h3{
    background-color:  #e2e2e2;
    height: 58px;
    width: 95px;
+   padding: 5px;
+   margin: 0 auto 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.match h4{
+   color: #949494;
+   font-weight: bold;
+   font-size: 10px;
+   width: fit-content;
+   height: fit-content;
+}
+.team-away img{
+   width: 35px;
+   margin: 0 5px 0 2px;
+}
+.team-home img{
+   width: 35px;
+   margin: 0 2px 0 5px;
+}
+}
+
+
+
+@media screen and (max-width: 500px){
+   html {
+      height: 100%;
+      width: 100%;
+    }
+    * {
+      font-family: 'Montserrat', -apple-system, sans-serif;
+       text-align: center;
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+    }
+    footer{
+      width: 100%;
+       background-color: #272020;
+       color: white;
+       padding: 10px 20px 15px 20px;
+       margin: 50px 0px 0px 0px;
+       border-top: 4px solid #7e0202 ;
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-rows: auto auto;
+    }
+    main{
+       width: 100%;
+    }
+  .footer-grl{
+     display: grid;
+     grid-template-columns: auto auto;
+     height: fit-content;
+  }
+  .redes ul{
+     list-style: none;
+     display: grid;
+     grid-template-columns: max-content max-content max-content;
+     gap: 30px;
+     height: fit-content;
+  }
+  .redes{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .redes svg{
+     width: 20px;
+     height: fit-content;
+  }
+  .footer-pag{
+     width: fit-content;
+     display: grid;
+     grid-template-columns: auto auto;
+     gap: 5px;
+    }
+  .footer-pag img{
+     display: flex;
+     justify-content: center;
+     border-radius: 50%;
+     width: 60px;
+  }
+  .footer-pag h2{
+     margin-top: auto;
+     color: white;
+     font-size: 15px;
+     margin-bottom: auto;
+  }
+  footer p{
+   word-spacing: 1px;
+     text-align:start;
+     display: inline;
+     justify-content: flex-start;
+     padding: 10px 5px 10px 5px;
+     margin: 5px 0px 10px;
+     font-family: 'Montserrat', -apple-system, sans-serif;
+     font-size: 12px;
+     font-weight: bold;
+     border-top: 2px solid white;
+     width: fit-content;
+  }
+  footer p a{
+     color: red;
+     display: inline;
+  }
+  footer p a:hover{
+   cursor: pointer;
+   color: #7e0202;
+   transition: 0.3s ease;
+  }
+  p{
+   padding: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+header{
+   height: 80px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: auto auto;
+   background-image: linear-gradient(300deg, red,#7e0202);
+   position: fixed;
+   text-align: center;
+   list-style: none;
+   top: 0;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   gap: 20px;
+   padding-right: 35px;
+   padding-left: 5px;
+}
+nav{
+   height: 100%;
+   overflow-x: auto;
+     white-space: nowrap;
+}
+  nav ul{
+   height: 100%;
+     display: grid;
+     gap: 25px;
+     grid-template-columns: auto auto auto auto auto;
+     list-style: none;
+     padding-top: auto;
+     margin-left: 2%;
+     font-size: 15px;
+  }
+  nav::-webkit-scrollbar {
+   height: 7px; /* Ancho de la barra */
+}
+nav::-webkit-scrollbar-thumb {
+   background: rgba(58, 58, 58, 0.7); /* Color con transparencia */
+}
+/* Efecto al pasar el cursor */
+nav::-webkit-scrollbar-thumb:hover {
+   background: rgba(100, 100, 100, 0.9);
+}
+/* Estilizar el "track" (fondo de la barra) */
+nav::-webkit-scrollbar-track {
+   background: transparent; /* Fondo transparente para que no afecte el border-radius */
+   border-radius: 10px;
+}
+nav li{
+   font-size: 13px;
+    border-radius: 5px;
+    width: max-content;
+    height: fit-content;
+    margin-top: 30px;
+  }
+  nav li a{
+    transition: all 0.5s ease;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-weight: bold;
+  }
+  nav li a:hover{
+    transition: 0.5s ease;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 5px;
+  }
+  .nombre-pagina{
+   height: fit-content;
+   width: fit-content;
+   text-align: center;
+   align-items: center;
+   display: grid;
+   grid-template-columns: auto max-content;
+   gap: 5px;
+  }
+  .nombre-pagina img{
+   padding-top: 5%;
+   width: 70px;
+   border-radius: 50%;
+  }
+  .nombre-pagina h1{
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+   align-items: center;  
+     padding-top: 10%;
+  }
+  
+
+  
+.name-pag{
+   width: 100%;
+   background-image:linear-gradient( 180deg, #141111, #4b4343);
+   height: 150px;
+   display: flex;
+   justify-content: left;
+}
+
+.name-pag h2{
+   width: fit-content;
+   height: fit-content;
+   margin: 110px 0 0 30px;
+   font-size: 25px;
+   font-weight: bold;
+   color: white;
+}
+h3{
+   margin-top: 40px;
+}
+.card-content{
+   width: 100%;
+}
+.menu{
+   border-bottom: 1px solid black;
+   display: grid;
+   grid-template-columns: auto auto;
+   width: auto;
+   margin: 0 20px 0 20px;
+}
+.prox-partidos{
+   font-size: 15px;
+   text-align: left;
+   margin-left: 15px;
+   width: max-content;
+   height: 30px;
+}
+.historial a{
+   color: white;
+}
+.historial-box{
+   display: flex;
+   justify-content: right;
+   margin-right: 15px;
+}
+.historial{
+   font-size: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px 8px 5px 8px;
+   width: max-content;
+   height: max-content;
+   background-color: #7e0202;
+   margin-bottom: 5px;
+   border-radius: 10px;
+}
+.historial:hover{
+   transition: 0.5s ease;
+   color: white;
+   background-color: #272020;
+}
+
+.gral h5{
+   width: 100%;
+   text-align: left;
+   margin-left: 25px;
+   font-weight: bold;
+   color: #949494;
+   font-size: 9px;
+}
+.gral{
+   margin-top: 50px;
+   font-family: fjalla one !important;
+   padding: 0 5px 0 5px;
+}
+.match{
+   border: 1px solid black;
+   border-radius: 25px;
+   width: 100%;
+   height: 55px;
+   margin: 4px 0 20px 0;
+   font-weight: bold;
+   box-shadow: 2px 2px 2px;
+}
+.teams{
+   display: grid;
+   grid-template-columns: max-content auto max-content;
+   gap: auto;
+   width: 100%;
+}
+.team-home{
+   height: 60px;
+   width: 100%;
+   align-items: center;
+   display: grid;
+   grid-template-columns: auto auto;
+}
+.team-away{
+   height: 60px;
+   align-items: center;
+   width: 100%;
+   display: grid;
+   grid-template-columns: auto auto;
+}
+.name-team{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   width:80px;
+   margin-bottom: 5px;
+   font-size: 10px;
+}
+.date{
+   border-right: 1px solid #e2e2e2;
+   background-color:  #e2e2e2;
+   height: 52px;
+   width: 90px;
    padding: 5px;
    margin: 0 auto 0 auto;
    display: flex;
