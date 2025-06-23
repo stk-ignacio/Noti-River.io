@@ -63,7 +63,7 @@ async function addNews() {
     .select();
 
   if (error) {
-    alert('Error al subir la noticia: ' + error.message);
+    alert('❌Error al subir la noticia: ' + error.message);
     return;
   }
 
@@ -76,7 +76,7 @@ async function addNews() {
   `;
   nt.insertBefore(article, nt.firstChild);
 
-  alert('Noticia publicada');
+  alert('✅Noticia publicada✅');
   closeModal();
   loadNews(); // recarga todas las noticias (con la nueva incluida)
 }
